@@ -104,10 +104,10 @@ void Bank::debug() {
 		cout << " |--- Column Mux Latency         = " << TO_SECOND(ColDriverLatency) << endl;
 		cout << " |--- Sense Amplifier Latency    = " << TO_SECOND(mat.subarray.senseAmpLatency) << endl;
 		cout << " |--- MUX of SA Latency          = " << TO_SECOND(mat.subarray.senseAmpMuxLev1.readLatency + mat.subarray.senseAmpMuxLev2.readLatency) << endl;
-		if(inputParameter->withOutputAcc = true){
+		if(inputParameter->withOutputAcc == true){
 			cout << " |--- Output Accumulator Latency = " << TO_SECOND(mat.subarray.outputAcc.readLatency) << endl;
 		}
-		if(inputParameter->withPriorityEnc = true){
+		if(inputParameter->withPriorityEnc == true){
 			cout << " |--- Priority Encoder Latency   = " << TO_SECOND(mat.subarray.priorityEnc.readLatency) << endl;
 		}
 		cout << endl;
