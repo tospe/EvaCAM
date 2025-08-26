@@ -773,7 +773,7 @@ void CAM_MemCell::ReadCellFromFile(const string & inputFile)
 
 void CAM_MemCell::PrintCell()
 {
-	char *type[6];
+	char *type[7];
 	type[0] = (char*)"Wordline";
 	type[1] = (char*)"Searchline";
 	type[2] = (char*)"Bitline";
